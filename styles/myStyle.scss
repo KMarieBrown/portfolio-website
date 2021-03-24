@@ -1,0 +1,23 @@
+// Required for customization
+@import './scss/functions';
+@import './scss/variables';
+@import './scss/mixins';
+
+@import './vendor/normalize';
+@import './partials/colors';
+@import './partials/mixins';
+@import './partials/typography';
+
+// Medium screens and up
+@media (min-width: 768px) {
+	.container {
+		font-size: small;
+	}
+}
+
+// Big screens
+@media (min-width: 1024px) {
+	.container {
+		font-size: large;
+	}
+}
