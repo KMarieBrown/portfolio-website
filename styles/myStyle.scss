@@ -3,21 +3,51 @@
 @import './scss/variables';
 @import './scss/mixins';
 
+@import './scss/bootstrap.scss';
+
 @import './vendor/normalize';
 @import './partials/colors';
 @import './partials/mixins';
 @import './partials/typography';
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 20px;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.logo2 {
+	display: none;
+}
+.nav-item {
+	text-align: right;
+}
+
 // Medium screens and up
 @media (min-width: 768px) {
-	.container {
-		font-size: small;
+	.logo1 {
+		display: none;
+	}
+	.logo2 {
+		display: block;
 	}
 }
 
 // Big screens
 @media (min-width: 1024px) {
-	.container {
-		font-size: large;
+	.logo2 {
+		width: 100px;
+		height: 100px;
 	}
+	// .nav-item {
+	// 	text-align: right;
+	// }
 }
