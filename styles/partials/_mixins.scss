@@ -1,12 +1,12 @@
 @mixin border-radius() {
-	-webkit-border-radius: 5px;
-	-mox-border-radius: 5px;
-	-ms-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 10px;
+	-mox-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
 }
-@mixin paragraph-padding() {
-	-webkit-padding: 20px;
-	-moz-padding: 20px;
-	-ms-padding: 20px;
-	padding: 20px;
+@mixin padding($top, $right, $bottom, $left) {
+	padding-top: $top;
+	padding-right: $right;
+	padding-bottom: $bottom;
+	padding-left: $left;
 }

@@ -3,6 +3,12 @@
 @import './scss/variables';
 @import './scss/mixins';
 
+$theme-colors: (
+	'light': #fff,
+	'dark': #2c3454,
+);
+
+// Import at the end of our custom styles
 @import './scss/bootstrap.scss';
 
 @import './vendor/normalize';
@@ -10,44 +16,58 @@
 @import './partials/mixins';
 @import './partials/typography';
 
-* {
+body {
 	margin: 0;
 	padding: 0;
+	text-align: center;
+	color: $primary-font-color;
+}
+img {
+	@include border-radius();
 }
 
-.container {
-	display: flex;
-	flex-direction: row;
-	padding-bottom: 20px;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-wrap: wrap;
+.jumbotron {
+	background-color: $primary-background-color;
+	@include padding(20px, 20px, 20px, 20px);
+	// margin-left: 20px;
+	// margin-right: 20px;
+	// @include border-radius();
+	font-family: $primary-heading-font;
 }
 
-.logo2 {
+.image2 {
 	display: none;
 }
 .nav-item {
 	text-align: right;
 }
 
+.navbar {
+	font-family: $primary-heading-font;
+	padding: 0 20px 0 5px;
+}
+
 // Medium screens and up
 @media (min-width: 768px) {
-	.logo1 {
+	.image1 {
 		display: none;
 	}
-	.logo2 {
-		display: block;
+	.image2 {
+		display: inline-block;
+	}
+	.jumbotron {
+		@include padding(40px, 40px, 40px, 40px);
+	}
+	.portrait {
+		// display: block;
+		align-items: right;
 	}
 }
 
 // Big screens
-@media (min-width: 1024px) {
-	.logo2 {
-		width: 100px;
-		height: 100px;
-	}
-	// .nav-item {
-	// 	text-align: right;
-	// }
-}
+// @media (min-width: 1024px) {
+// 	.image2 {
+// 		width: 100px;
+// 		height: 100px;
+// 	}
+// }
