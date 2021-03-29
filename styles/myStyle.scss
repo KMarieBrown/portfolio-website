@@ -16,35 +16,61 @@ $theme-colors: (
 @import './partials/mixins';
 @import './partials/typography';
 
+// Styling for elements
 body {
 	margin: 0;
 	padding: 0;
 	text-align: center;
 	color: $primary-font-color;
 }
+footer {
+	background-color: $quaternary-background-color;
+	color: $tertiary-font-color;
+}
+footer a {
+	color: $dark;
+}
+h1,
+h2,
+h3 {
+	font-family: $primary-heading-font;
+}
 img {
 	@include border-radius();
 }
+p {
+	font-family: $paragraph-font;
+	padding-top: 10px;
+}
+section {
+	margin-top: 25px;
+	@include padding(40px, 20px, 40px, 20px);
+}
 
+// Styling for classes
+.aboutIntro {
+	background-color: $tertiary-background-color;
+}
 .jumbotron {
 	background-color: $primary-background-color;
 	@include padding(20px, 20px, 20px, 20px);
-	// margin-left: 20px;
-	// margin-right: 20px;
-	// @include border-radius();
 	font-family: $primary-heading-font;
 }
-
 .image2 {
 	display: none;
 }
-.nav-item {
+.headerNav {
 	text-align: right;
 }
-
+.nav {
+	font-family: $primary-heading-font;
+}
 .navbar {
 	font-family: $primary-heading-font;
 	padding: 0 20px 0 5px;
+}
+.projectsIntro {
+	background-color: $secondary-background-color;
 }
 
 // Medium screens and up

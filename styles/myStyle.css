@@ -11077,9 +11077,39 @@ body {
   color: white;
 }
 
+footer {
+  background-color: #ecf0fa;
+  color: #041c54;
+}
+
+footer a {
+  color: #212529;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  font-family: "Playfair Display", serif;
+}
+
 img {
   -mox-border-radius: 10px;
   border-radius: 10px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 10px;
+}
+
+section {
+  margin-top: 25px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+
+.aboutIntro {
+  background-color: #5280bf;
 }
 
 .jumbotron {
@@ -11095,13 +11125,21 @@ img {
   display: none;
 }
 
-.nav-item {
+.headerNav {
   text-align: right;
+}
+
+.nav {
+  font-family: "Playfair Display", serif;
 }
 
 .navbar {
   font-family: "Playfair Display", serif;
   padding: 0 20px 0 5px;
+}
+
+.projectsIntro {
+  background-color: #041c54;
 }
 
 @media (min-width: 768px) {
