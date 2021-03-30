@@ -11080,10 +11080,18 @@ body {
 footer {
   background-color: #ecf0fa;
   color: #041c54;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 footer a {
   color: #212529;
+}
+
+footer p {
+  padding-top: 30px;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
@@ -11097,7 +11105,7 @@ img {
 
 p {
   font-family: "Open Sans", sans-serif;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 section {
@@ -11108,8 +11116,16 @@ section {
   padding-left: 20px;
 }
 
+section h2, section .h2 {
+  margin-bottom: 30px;
+}
+
 .aboutIntro {
   background-color: #5280bf;
+}
+
+.btn {
+  margin-top: 10px;
 }
 
 .jumbotron {
@@ -11119,6 +11135,7 @@ section {
   padding-bottom: 20px;
   padding-left: 20px;
   font-family: "Playfair Display", serif;
+  margin-top: 74px;
 }
 
 .image2 {
@@ -11142,7 +11159,21 @@ section {
   background-color: #041c54;
 }
 
+.sticky-top {
+  position: fixed;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
+  footer {
+    margin-top: 20px;
+  }
+  section {
+    -mox-border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .image1 {
     display: none;
   }
@@ -11154,6 +11185,11 @@ section {
     padding-right: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
+    -mox-border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 90px;
   }
   .portrait {
     -webkit-box-align: right;

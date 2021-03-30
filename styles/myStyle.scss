@@ -26,9 +26,13 @@ body {
 footer {
 	background-color: $quaternary-background-color;
 	color: $tertiary-font-color;
+	@include padding(40px, 20px, 20px, 20px);
 }
 footer a {
 	color: $dark;
+}
+footer p {
+	padding-top: 30px;
 }
 h1,
 h2,
@@ -40,21 +44,28 @@ img {
 }
 p {
 	font-family: $paragraph-font;
-	padding-top: 10px;
+	padding-top: 30px;
 }
 section {
 	margin-top: 25px;
 	@include padding(40px, 20px, 40px, 20px);
+}
+section h2 {
+	margin-bottom: 30px;
 }
 
 // Styling for classes
 .aboutIntro {
 	background-color: $tertiary-background-color;
 }
+.btn {
+	margin-top: 10px;
+}
 .jumbotron {
 	background-color: $primary-background-color;
 	@include padding(20px, 20px, 20px, 20px);
 	font-family: $primary-heading-font;
+	margin-top: 74px;
 }
 .image2 {
 	display: none;
@@ -72,9 +83,21 @@ section {
 .projectsIntro {
 	background-color: $secondary-background-color;
 }
+.sticky-top {
+	position: fixed;
+	width: 100%;
+}
 
 // Medium screens and up
 @media (min-width: 768px) {
+	footer {
+		margin-top: 20px;
+	}
+	section {
+		@include border-radius();
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 	.image1 {
 		display: none;
 	}
@@ -83,6 +106,10 @@ section {
 	}
 	.jumbotron {
 		@include padding(40px, 40px, 40px, 40px);
+		@include border-radius();
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 90px;
 	}
 	.portrait {
 		// display: block;
