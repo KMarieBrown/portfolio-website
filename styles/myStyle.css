@@ -11146,13 +11146,12 @@ section h2, section .h2 {
   text-align: right;
 }
 
-.nav {
-  font-family: "Playfair Display", serif;
-}
-
 .navbar {
   font-family: "Playfair Display", serif;
-  padding: 0 20px 0 5px;
+  padding-top: 0;
+  padding-right: 2px;
+  padding-bottom: 0;
+  padding-left: 1px;
 }
 
 .projectsIntro {
@@ -11167,6 +11166,9 @@ section h2, section .h2 {
 @media (min-width: 768px) {
   footer {
     margin-top: 20px;
+  }
+  p {
+    font-size: 16px;
   }
   section {
     -mox-border-radius: 10px;
@@ -11191,10 +11193,30 @@ section h2, section .h2 {
     margin-right: 20px;
     margin-top: 90px;
   }
-  .portrait {
-    -webkit-box-align: right;
-        -ms-flex-align: right;
-            align-items: right;
+  .navbar {
+    padding-top: 0;
+    padding-right: 10px;
+    padding-bottom: 0;
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .jumbotron {
+    margin-top: 115px;
+  }
+  .logo2 {
+    width: 100px;
+    height: 100px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .navbar {
+    padding-top: 0;
+    padding-right: 12px;
+    padding-bottom: 0;
+    padding-left: 12px;
   }
 }
 /*# sourceMappingURL=myStyle.css.map */

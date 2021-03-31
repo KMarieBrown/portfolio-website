@@ -73,12 +73,9 @@ section h2 {
 .headerNav {
 	text-align: right;
 }
-.nav {
-	font-family: $primary-heading-font;
-}
 .navbar {
 	font-family: $primary-heading-font;
-	padding: 0 20px 0 5px;
+	@include padding(0, 2px, 0, 1px);
 }
 .projectsIntro {
 	background-color: $secondary-background-color;
@@ -92,6 +89,9 @@ section h2 {
 @media (min-width: 768px) {
 	footer {
 		margin-top: 20px;
+	}
+	p {
+		font-size: 16px;
 	}
 	section {
 		@include border-radius();
@@ -111,16 +111,24 @@ section h2 {
 		margin-right: 20px;
 		margin-top: 90px;
 	}
-	.portrait {
-		// display: block;
-		align-items: right;
+	.navbar {
+		@include padding(0, 10px, 0, 5px);
 	}
 }
 
 // Big screens
-// @media (min-width: 1024px) {
-// 	.image2 {
-// 		width: 100px;
-// 		height: 100px;
-// 	}
-// }
+@media (min-width: 1024px) {
+	.jumbotron {
+		margin-top: 115px;
+	}
+	.logo2 {
+		width: 100px;
+		height: 100px;
+	}
+	p {
+		font-size: 18px;
+	}
+	.navbar {
+		@include padding(0, 12px, 0, 12px);
+	}
+}
