@@ -11080,6 +11080,7 @@ body {
 footer {
   background-color: #ecf0fa;
   color: #041c54;
+  margin-top: 5px;
   padding-top: 40px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -11124,8 +11125,24 @@ section h2, section .h2 {
   background-color: #5280bf;
 }
 
+.arrow {
+  padding-top: 40px;
+  display: none;
+}
+
 .btn {
   margin-top: 10px;
+}
+
+.card {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.card-footer {
+  margin-top: 40px;
 }
 
 .jumbotron {
@@ -11156,6 +11173,20 @@ section h2, section .h2 {
 
 .projectsIntro {
   background-color: #041c54;
+}
+
+.evenSection {
+  background-color: #5280bf;
+  color: #2c3454;
+  -mox-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.oddSection {
+  background-color: #041c54;
+  color: #041c54;
+  -mox-border-radius: 10px;
+  border-radius: 10px;
 }
 
 .sticky-top {
@@ -11202,6 +11233,9 @@ section h2, section .h2 {
 }
 
 @media (min-width: 1024px) {
+  .arrow {
+    display: inline-block;
+  }
   .jumbotron {
     margin-top: 115px;
   }
@@ -11217,6 +11251,10 @@ section h2, section .h2 {
     padding-right: 12px;
     padding-bottom: 0;
     padding-left: 12px;
+  }
+  .pcGirl {
+    max-height: 45vh;
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=myStyle.css.map */

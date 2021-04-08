@@ -26,6 +26,7 @@ body {
 footer {
 	background-color: $quaternary-background-color;
 	color: $tertiary-font-color;
+	margin-top: 5px;
 	@include padding(40px, 20px, 20px, 20px);
 }
 footer a {
@@ -58,8 +59,18 @@ section h2 {
 .aboutIntro {
 	background-color: $tertiary-background-color;
 }
+.arrow {
+	padding-top: 40px;
+	display: none;
+}
 .btn {
 	margin-top: 10px;
+}
+.card {
+	@include padding(10px, 15px, 10px, 15px);
+}
+.card-footer {
+	margin-top: 40px;
 }
 .jumbotron {
 	background-color: $primary-background-color;
@@ -79,6 +90,16 @@ section h2 {
 }
 .projectsIntro {
 	background-color: $secondary-background-color;
+}
+.evenSection {
+	background-color: $tertiary-background-color;
+	color: $secondary-font-color;
+	@include border-radius();
+}
+.oddSection {
+	background-color: $secondary-background-color;
+	color: $secondary-background-color;
+	@include border-radius();
 }
 .sticky-top {
 	position: fixed;
@@ -118,6 +139,9 @@ section h2 {
 
 // Big screens
 @media (min-width: 1024px) {
+	.arrow {
+		display: inline-block;
+	}
 	.jumbotron {
 		margin-top: 115px;
 	}
@@ -130,5 +154,9 @@ section h2 {
 	}
 	.navbar {
 		@include padding(0, 12px, 0, 12px);
+	}
+	.pcGirl {
+		max-height: 45vh;
+		margin-top: 20px;
 	}
 }
