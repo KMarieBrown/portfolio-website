@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="K. Marie Brown's Portfolio">
     <title>Marie's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="styles/myStyle.css">
 </head>
 
 <body>
-<!-- ****************************** Header Section ****************************** -->
+<!-- ************************* Header Section ************************* -->
     <header>
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./assets/images/kmb-logo-400x400.png" class="image1" alt="logo" width="60" height="60">
-                    <img src="./assets/images/kmariebrown-logo-400x400.png" class="image2 logo2" alt="logo" width="80" height="80">
+                    <img src="./assets/images/kmariebrown-logo-400x400.png" class="logo" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,51 +37,107 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-<!--                   <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>-->
                 </div>
             </div>
         </nav>
     </header>
 
-<!-- ****************************** Jumbotron Section ****************************** -->
-<div class="jumbotron">
-    <div class="container container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-4">
-                <img src="./assets/images/headshot-200x225.png" class="image1" alt="Picture of Marie" width="200px">
-                <img src="./assets/images/headshot-300x325.png" alt="Picture of Marie" class="image2 img-fluid" width="500px">
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-8">
-                <h1 class="display-2">Marie Brown</h1>
-                <h2 class="display-5" style="padding-left: 50px; padding-right: 50px;">Front-End Web Developer</h2>
-            </div>
-        </div>
+<!-- ************************* Jumbotron Section ************************* -->
+<div class="card text-center jumbotron">
+    <div class="card-header bg-light">
+    </div>
+    <div class="card-body">
+        <h1 class="card-title display-4">About Me</h1>
+    </div>
+    <div class="card-footer text-muted bg-light card0Margin">
     </div>
 </div>
 
-<!-- ****************************** Main Section ****************************** -->
+<!-- ************************* Main Section ************************* -->
 <main>
-<!-- ****************************** Projects Section ****************************** -->
-    <section class="projectsIntro">
-        <h2>Projects</h2>
-        <a href="projects.html"><img src="./assets/images/projects560x560.jpg" alt="Screenshot of Website Projects" width="260px"></a>
-        <p>Here, you will find a few selected projects that showcase my talent and growth.</p>
-        <a href="projects.html" class="btn btn-light btn-sm" role="button">Read More</a>
+    <!-- ************************* Subsection 1 ************************* -->
+    <section class="oddSection">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-12 col-lg-6">
+                    <img class="img-fluid" src="./assets/images/casual-headshot-485x485.jpg"
+                        alt="Picture of Marie" style="margin-top: 30px">
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="card-body">
+                        <h2 class="card-title">K. Marie Brown</h2>
+                        <p class="card-text">Please, call me Marie. I discovered a love for Front-End Web Development after a few years of using the left side of my brain. I gained a lot of great skills in my previous career, but I've unleashed myself since using the creative side. Seriously, who doesn't love seeing their ideas come to life online? </p>
+                        <p>I'm completing a degree in Digital Media this summer and looking forward to a career in a field that is ever evolving. </p>
+                        <p>In my free time I enjoy yoga, bike riding, and spending time in nature. I love listening to music in any format and karaoke is my absolute favorite thing to do. I am from Waukegan, IL, which is a far north suburb of Chicago. I'm currently enjoying life as a military wife here San Antonio, TX.</p>
+                        <a href="./assets/files/marie-brown-resume.pdf" target="_blank" class="btn btn-dark btn-sm">View Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-<!-- ****************************** About Section ****************************** -->
-    <section class="aboutIntro">
-        <h2>About Me</h2>
-        <a href="about-me.html"><img src="./assets/images/about-600x600.jpg" alt="Personal Design" width="260px"></a>
-        <p>I began building websites in the Fall of 2019. I made a career change and haven't looked back. I'm working on some exciting projects and learning new skills every day. </p>
-        <a href="about-me.html" class="btn btn-light btn-sm" role="button">Read More</a>
+    <!-- ************************* Subsection 2 ************************* -->
+    <section class="evenSection">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-12 col-lg-6">
+                    <div class="card-body">
+                        <h2 class="card-title">Technical Skills</h2>
+                            <ul>
+                                <li>Adobe Creative Applications</li>
+                                <li>Bootstrap</li>
+                                <li>CSS3</li>
+                                <li>Figma</li>
+                                <li>GitHub</li>
+                                <li>HTML5</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>Visual Studio Code</li>
+                                <li>WordPress</li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="card-body">
+                        <h2 class="card-title">Relevant Coursework</h2>
+                            <ul>
+                                <li>Digital Media Programming</li>
+                                <li>Design</li>
+                                <li>Web Design</li>
+                                <li>Interface Design</li>
+                                <li>Interactive Digital Media</li>
+                                <li>Writing for Digital Media</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ************************* Subsection 3 ************************* -->
+    <section class="oddSection">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-12 col-lg-6">
+                    <img class="img-fluid" src="./assets/images/head-learning-480x480.jpg"
+                    alt="Screenshot of Webfolio website">
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="card-body">
+                        <h2 class="card-title">Currently Working On</h2>
+                        <p class="card-text">I'm excited to start a freelance project to create a site for a non-profit agency. Also, I will be finishing my last semester in school this summer and then starting a new journey to become a certified Salesforce Developer. </p>
+                        <p class="card-text">I'm interested in documenting my journey, but I haven't decided on a format yet. </p>
+                        <p class="card-text">Twitter or YouTube? Where to begin?</p>
+                        <!-- <a href="#" target="_blank" class="btn btn-dark btn-sm"
+                            role="button">Follow Me Here</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 
-<!-- ****************************** Footer Section ****************************** -->
+<!-- ************************* Footer Section ************************* -->
 <footer>
     <div class="container socialIcon">
         <div class="row">
@@ -102,7 +158,7 @@
     <div><p>&#169; K. Marie Brown 2021. All rights reserved.</p></div>
 </footer>
 
-<!-- ****************************** Scripts Section ****************************** -->
+<!-- ************************* Scripts Section ************************* -->
         <script src="./js/jquery-3.6.0.min.js"></script>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"

@@ -11104,9 +11104,10 @@ img {
   border-radius: 10px;
 }
 
-p {
+p,
+ul {
   font-family: "Open Sans", sans-serif;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 section {
@@ -11115,10 +11116,19 @@ section {
   padding-right: 20px;
   padding-bottom: 40px;
   padding-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 section h2, section .h2 {
   margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .aboutIntro {
@@ -11145,6 +11155,15 @@ section h2, section .h2 {
   margin-top: 40px;
 }
 
+.card0Margin {
+  margin-top: 0;
+}
+
+.card-title {
+  margin-bottom: 0.67em;
+  margin-top: 0.67em;
+}
+
 .jumbotron {
   background-color: #2c3454;
   padding-top: 20px;
@@ -11155,12 +11174,16 @@ section h2, section .h2 {
   margin-top: 74px;
 }
 
-.image2 {
+.showLgScreen {
   display: none;
 }
 
 .headerNav {
   text-align: right;
+}
+
+.logo {
+  width: 60px;
 }
 
 .navbar {
@@ -11199,29 +11222,30 @@ section h2, section .h2 {
     margin-top: 20px;
   }
   p {
-    font-size: 16px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+  }
+  p,
+  ul {
+    font-size: 18px;
   }
   section {
     -mox-border-radius: 10px;
     border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
-  .image1 {
-    display: none;
-  }
-  .image2 {
-    display: inline-block;
+  .logo {
+    width: 80px;
   }
   .jumbotron {
     padding-top: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
-    -mox-border-radius: 10px;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    border-radius: 0;
     margin-top: 90px;
   }
   .navbar {
@@ -11229,6 +11253,12 @@ section h2, section .h2 {
     padding-right: 10px;
     padding-bottom: 0;
     padding-left: 5px;
+  }
+  .showLgScreen {
+    display: inline-block;
+  }
+  .showSmScreen {
+    display: none;
   }
 }
 
@@ -11238,13 +11268,11 @@ section h2, section .h2 {
   }
   .jumbotron {
     margin-top: 115px;
+    border-radius: 0;
   }
-  .logo2 {
-    width: 100px;
-    height: 100px;
-  }
-  p {
-    font-size: 18px;
+  p,
+  ul {
+    font-size: 20px;
   }
   .navbar {
     padding-top: 0;
