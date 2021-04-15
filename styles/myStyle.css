@@ -11095,6 +11095,13 @@ footer p {
   padding-top: 30px;
 }
 
+form {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: larger;
+  margin-top: 40px;
+}
+
 h1, .h1, h2, .h2, h3, .h3 {
   font-family: "Playfair Display", serif;
 }
@@ -11102,6 +11109,10 @@ h1, .h1, h2, .h2, h3, .h3 {
 img {
   -mox-border-radius: 10px;
   border-radius: 10px;
+}
+
+label {
+  padding-bottom: 10px;
 }
 
 p,
@@ -11164,6 +11175,21 @@ ul {
   margin-top: 0.67em;
 }
 
+.contactImg {
+  margin-bottom: 40px;
+}
+
+.evenSection {
+  background-color: #5280bf;
+  color: #2c3454;
+  -mox-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.headerNav {
+  text-align: right;
+}
+
 .jumbotron {
   background-color: #2c3454;
   padding-top: 20px;
@@ -11172,14 +11198,6 @@ ul {
   padding-left: 20px;
   font-family: "Playfair Display", serif;
   margin-top: 74px;
-}
-
-.showLgScreen {
-  display: none;
-}
-
-.headerNav {
-  text-align: right;
 }
 
 .logo {
@@ -11194,22 +11212,19 @@ ul {
   padding-left: 1px;
 }
 
-.projectsIntro {
-  background-color: #041c54;
-}
-
-.evenSection {
-  background-color: #5280bf;
-  color: #2c3454;
-  -mox-border-radius: 10px;
-  border-radius: 10px;
-}
-
 .oddSection {
   background-color: #041c54;
   color: #041c54;
   -mox-border-radius: 10px;
   border-radius: 10px;
+}
+
+.projectsIntro {
+  background-color: #041c54;
+}
+
+.showLgScreen {
+  display: none;
 }
 
 .sticky-top {

@@ -35,6 +35,12 @@ footer a {
 footer p {
 	padding-top: 30px;
 }
+form {
+	text-align: left;
+	font-family: $paragraph-font;
+	font-size: larger;
+	margin-top: 40px;
+}
 h1,
 h2,
 h3 {
@@ -42,6 +48,9 @@ h3 {
 }
 img {
 	@include border-radius();
+}
+label {
+	padding-bottom: 10px;
 }
 p,
 ul {
@@ -88,17 +97,22 @@ ul {
 	margin-bottom: 0.67em;
 	margin-top: 0.67em;
 }
+.contactImg {
+	margin-bottom: 40px;
+}
+.evenSection {
+	background-color: $tertiary-background-color;
+	color: $secondary-font-color;
+	@include border-radius();
+}
+.headerNav {
+	text-align: right;
+}
 .jumbotron {
 	background-color: $primary-background-color;
 	@include padding(20px, 20px, 20px, 20px);
 	font-family: $primary-heading-font;
 	margin-top: 74px;
-}
-.showLgScreen {
-	display: none;
-}
-.headerNav {
-	text-align: right;
 }
 .logo {
 	width: 60px;
@@ -107,18 +121,16 @@ ul {
 	font-family: $primary-heading-font;
 	@include padding(0, 2px, 0, 1px);
 }
-.projectsIntro {
-	background-color: $secondary-background-color;
-}
-.evenSection {
-	background-color: $tertiary-background-color;
-	color: $secondary-font-color;
-	@include border-radius();
-}
 .oddSection {
 	background-color: $secondary-background-color;
 	color: $secondary-background-color;
 	@include border-radius();
+}
+.projectsIntro {
+	background-color: $secondary-background-color;
+}
+.showLgScreen {
+	display: none;
 }
 .sticky-top {
 	position: fixed;
