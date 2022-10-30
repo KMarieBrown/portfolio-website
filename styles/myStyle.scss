@@ -1,20 +1,20 @@
 // Required for customization
-@import './scss/functions';
-@import './scss/variables';
-@import './scss/mixins';
+@import "./scss/functions";
+@import "./scss/variables";
+@import "./scss/mixins";
 
 $theme-colors: (
-	'light': #fff,
-	'dark': #2c3454,
+	"light": #fff,
+	"dark": #2c3454,
 );
 
 // Import at the end of our custom styles
-@import './scss/bootstrap.scss';
+@import "./scss/bootstrap.scss";
 
-@import './vendor/normalize';
-@import './partials/colors';
-@import './partials/mixins';
-@import './partials/typography';
+@import "./vendor/normalize";
+@import "./partials/colors";
+@import "./partials/mixins";
+@import "./partials/typography";
 
 // Styling for elements
 body {
